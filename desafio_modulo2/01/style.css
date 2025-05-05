@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Abel ;
+    src: url(fontes/Abel/Abel-Regular.ttf);
+}
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+body{
+    font-family: Abel;
+    background-color: #77f186;
+}
+
+
+header{
+  background-image: linear-gradient(to top, #047511, #06C21C, #51F765);
+  text-align: center;
+  margin: 0px -10px;
+  padding: 15px;
+  color: white;
+}
+
+nav{
+    text-align: left;
+    
+
+}
+
+nav > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    width: 900px;
+    padding: 28px;
+    border-radius: 0px 0px 20px 20px ;
+    min-width: 300px;
+    max-width: 1000px;
+
+}
+
+#imagem{
+    margin:auto;
+    width: 450px;
+}
+
+footer{
+    background-color: #047511;
+    text-align: center;
+    color: white;
+    margin: -10px;
+}
+
+h2{
+    font-family: idroid;
+    color: #047511;
+}
+
+h3{
+    font-family: idroid;
+    background-image: linear-gradient(to right, #77f186, #ffff);
+    color: #047511;
+}
+
+h4{
+    background-color: #77f186;
+    margin: -10px;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+    color: #ffffff;
+}
+
+#tabela{
+    background-color: #b4f3bb;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.conteiner{
+    display: flex;
+   
+}
+
+.elemento{
+    margin-right: 260px;
+}
+
+li{
+    list-style-type: "✔    ";
+    
+}
+.link > a{
+    color: #047511;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main img{
+    width: 100%;
+}
+

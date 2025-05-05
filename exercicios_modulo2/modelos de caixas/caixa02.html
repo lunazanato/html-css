@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+<style>
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #9b9bfc;
+
+    }
+
+    header{
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+        box-shadow: 2px 4px 8px #000000a1;
+        border-radius: 10px 20px 30px 40px;
+
+    }
+
+    main{
+        background-color: white;
+        padding: 5px 10px;
+        margin: 10px;
+        box-shadow: 3px 4px 8px #000000a1;
+        border-radius: 10px 20px 30px 40px;
+    }
+
+    footer{
+        color: white;
+        background-color: blue;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+        border-radius: 10px 20px 30px 40px;
+    }
+
+    footer > p{
+        margin: 0px;
+    }
+
+    h2{
+        text-align: center;
+        color: #090944;
+       
+    }
+
+    nav{
+        text-align: left;
+        background-color: orange;
+        box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.479);
+    }
+
+    nav > a{
+        color: #090944;
+        font-weight: bold;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    nav > a:hover{
+        text-decoration: underline;
+    }
+
+    article{
+        background-color: antiquewhite;
+        padding: 5px;
+    }
+
+    article > aside{
+        text-align: right;
+            
+    }
+    #assuntos{
+        background-color: aquamarine;
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+                <p>Esportes, Notícias e Tecnologia.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ab qui, velit aut quae, voluptate facilis quidem laboriosam blanditiis in dolores voluptas facere laudantium possimus voluptatum excepturi eos. Voluptatum, officia!</p>
+                <aside>
+                    <p>artigo escrito por luna.</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Cursoemvideo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+</head>
+<body>
+    <h1><div>Imagens dinâmicas</div></h1>
+    <p> Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 700px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios em HTML</h1>
+    <P>Vamos aprender a reproduzir áudios em HTML.</P>
+     <audio preload="metadata" autoplay controls loop>
+        <source src="midia/glo-fi.mp3" type="audio/mpeg">
+        <p>infelizmente seu áudio não é compatível. <a href="midia/glo-fi.mp3">clique aqui para baixar o arquivo mp3</a></p>
+     </audio>
+    <!--formatos-->
+    <!--mp3 wav ogg-->
+    <h1>Inserindo vídeos hospedado localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="videos/girafa.jpeg" controls>
+        <source src="videos/girafa.mp4.mp4" type="video/mp4">
+        <source src="videos/girafa.mp4.ogv.ogv" type="video/ogg">
+        <p>seu navegador não tem compatibilidade com reprodução em vídeos</p>
+    </video>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RDrfZ-7WE8c?si=Ws2793X_FzMnF0y2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
