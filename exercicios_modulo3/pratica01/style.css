@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.div1{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hamburguer{
+    width: 200px;
+
+}
+
+.infoburg{
+    background-color: red;
+    color: white;
+}
+
+strong{
+    background-color: yellow;
+}
+
+.div2{
+    background-color: white;
+    text-align: center;
+}
+
+.batata{
+    width: 300px;
+    margin: auto;
+}
+
+.infobata{
+    background-color: red;
+    color: white;
+    margin: 0px;
+}
+
+
