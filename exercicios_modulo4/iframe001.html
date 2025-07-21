@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe{
+            width: 400px; /* as configurações de css tem mais importância */
+            height: 400px;
+            border: 1px dashed black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+    <p> Acessando o site do 
+        <!-- tamanho padrão do ifram: 300x150 -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="1" height="500" width="500" scolling = "auto">
+            <a href="https://cursoemvideo.com" target="_blank">Curso em Video</a>
+        </iframe> <!-- está inline, na mesma linha -->
+        <!-- src: site que desejar colocar. frameborder: borda do iframe, 0 ou 1-->
+        para aprender a programar.
+    </p>
+    <!-- <p>
+        O site do 
+        <iframe src="https://www.google.com.br" frameborder="0">
+
+        </iframe>
+        também é bem legal, pena que não funciona dentro do iframe.
+    </p> -->
+    <p>
+        O repositório do Guanabara
+        
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500">
+            no <a href="https://gustavoguanabara.github.io">GitHub</a>
+        </iframe>
+        
+        é bem legal.
+    </p>
+</body>
+</html>
