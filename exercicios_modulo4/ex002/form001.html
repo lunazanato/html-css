@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- method = "get": aparece na url
+        method = "post": não aparece na url
+        autocomplete = "off": não aparece barra de sugestões quando você for preencher um formulário
+        label: dá significado à palavra, ao parágrafo
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- desativa sugestões -->
+        <p><label for="inome">Nome: </label> <input type="text" name="nome" id="inome"></p> <!-- label relaciona "nome" com o "input". usar sempre o id no for -->
+        <p><label for="isobrenome">Sobrenome: </label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p> <input type="submit" value="enviar"></p> <!-- botão de enviar -->
+    </form>
+</body>
+</html>
