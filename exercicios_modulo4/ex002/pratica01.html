@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade do capítulo 24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- 
+Nome, cpf, rg, número do cartão, endereço, pretensão salarial, cargo, email, senha, cor preferida, escolha um esporte, sexo, mensagem, nivel de satisfação, data de nascimento, envie sua foto, periodo letivo, telefone, horario
+-->
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="name" id="dados">
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" required min="5" max="30" autocomplete="name" placeholder="digite seu nome...">
+            </div>
+            <div class="email" id="dados">
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="email" id="iemail" required min="10" max="30" autocomplete="username" placeholder="digite seu e-mail...">
+            </div>
+            <div class="senha" id="dados">
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required min="8" max="20" placeholder="digite sua senha...">
+            </div>
+            <div class="cpf" id="dados">
+                <label for="icpf">CPF: </label>
+                <input type="text" name="cpf" id="icpf" required placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="digite no formato: 000.000.000-00">
+            </div>
+            <div class="rg" id="dados">
+                <label for="irg">RG: </label>
+                <input type="text" name="rg" id="irg" required placeholder="00.000.000-0" pattern="\d{2}.\d{3}.\d{3}-\d{1}">
+            </div>
+            <div class="cartao" id="dados">
+                <label for="icartao">Nº do Cartão: </label>
+                <input type="text" name="cartao" id="icartao" max="16" min="16" required placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="ano" id="dados">
+                <label for="ianonasc">Ano de Nascimento: </label>
+                <input type="date" name="anonasc" id="ianonasc" required >
+            </div>
+            <div class="tel" id="dados">
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" required placeholder="(00)00000-0000" pattern="\d{2}\d{5}-\d{4}" autocomplete="tel">
+            </div>
+            <div class="foto" id="dados">
+                <label for="ifoto">Envie uma foto sua: </label>
+                <input type="file" name="foto" id="ifoto" required>
+            </div>
+            <div class="ender" id="dados">
+                <label for="irua">Endereço: </label>
+                <input type="text" name="rua" id="irua" required min="5" max="50" placeholder="25 de março...">
+                <label for="inum">Nº: </label>
+                <input type="number" name="num" id="inum" min="0" max="50" placeholder="504">
+            </div>
+            <div class="bairro" id="dados">
+                <label for="ibairro">Bairro: </label>
+                <input type="text" name="bairro" id="ibairro" required min="5" max="50" placeholder="Vila Madalena...">
+            </div>
+            <div class="uf" id="dados">
+                <label for="iest">UF: </label>
+                <select name="estado" id="iest" required>
+                    <option value="">AC</option>
+                    <option value="">AL</option>
+                    <option value="">AP</option>
+                    <option value="">AM</option>
+                    <option value="">BA</option>
+                    <option value="">CE</option>
+                    <option value="">DF</option>
+                    <option value="">ES</option>
+                    <option value="">GO</option>
+                    <option value="">MA</option>
+                    <option value="">MT</option>
+                    <option value="">MS</option>
+                    <option value="">MG</option>
+                    <option value="">PA</option>
+                    <option value="">PB</option>
+                    <option value="">PR</option>
+                    <option value="">PE</option>
+                    <option value="">PI</option>
+                    <option value="">RJ</option>
+                    <option value="">RN</option>
+                    <option value="">RS</option>
+                    <option value="">RO</option>
+                    <option value="">RR</option>
+                    <option value="">SC</option>
+                    <option value="" selected>SP</option>
+                    <option value="">SE</option>
+                    <option value="">TO</option>
+                </select>
+            </div>
+            <div class="prof" id="dados">
+                <label for="iprof">Profissão: </label>
+                <input type="text" name="prof" id="iprof" list="lstprof" required placeholder="Desenvolvedor...">
+                <datalist id="lstprof">
+                    <option>Desenvolvedor(a) de software</option>
+                    <option>Analista de dados</option>
+                    <option>Segurança cibernética</option>
+                    <option>Gestor de TI</option>
+                    <option>Desenvolvedor(a) web</option>
+                    <option>Analista de Bussiness Intelligence</option>
+                    <option>Especialista em segurança da informação</option>
+                    <option>Cientista de dados</option>
+                    <option>Administrador(a) de dados</option>
+                    <option>Desenvolvedor(a) de aplicativos móveis</option>
+                    <option>Engenheiro(a) de software</option>
+                </datalist>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Outros Dados</legend>
+            <div class="esp" id="dados">
+                <label for="iesp">Esportes: </label> <br>
+                <input type="checkbox" name="esporte" id="iesp"> Futebol <br>
+                <input type="checkbox" name="esporte" id="iesp"> Futebol Americano <br>
+                <input type="checkbox" name="esporte" id="iesp"> Vôlei<br>
+                <input type="checkbox" name="esporte" id="iesp"> Basquete <br>
+            </div>
+            <div class="cor" id="dados">
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#ffffff">
+            </div>
+            <div class="salario" id="dados">
+                <label for="isal">Pretensão salarial: </label>R$
+                <input type="number" name="sal" id="isal" step="100" placeholder="3500">
+            </div>
+            <div class="nivel" id="dados">
+                <label for="inivel">Nível de saftisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="0" max="5" value="0" oninput="ival.innerHTML = Number(inivel.value)">
+                <output id="ival">5</output>
+            </div>
+            <div class="men" id="dados">
+                <label for="imen">Mensagem: </label> <br>
+                <textarea name="msg" id="imsg" cols="35" rows="5" placeholder="Sua mensagem..."></textarea>
+            </div>
+        </fieldset>
+        <div class="botoes">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
