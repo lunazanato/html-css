@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title> 
+    <style>
+        .container{
+            border: 3px solid blue;
+            height: 250px;
+            display: grid;
+            /* grid-template-columns: 70px 70px 70px; */
+            grid-template-columns: auto auto auto; /* três colunas */
+            grid-template-rows: auto auto auto; /* três linhas */
+            gap: 20px; /* espaçamento entre as grades */
+            justify-content: center;
+        }
+        .item{
+            border: 1px dashed orangered;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
