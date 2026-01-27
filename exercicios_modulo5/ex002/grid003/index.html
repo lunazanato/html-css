@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica aula 4</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            height: 250px;
+            display: grid;
+            grid-template: repeat(3, auto) / repeat(3, auto); /* forma de simplificar */
+            place-items: stretch center; /* forma de simplificar */
+            place-content: start end;
+            margin-bottom: 20px;
+        }
+        .item{
+            border: 1px solid red;
+            
+        }
+
+        .container2{
+            border: 2px solid purple;
+            display: grid;
+            grid-template-columns: 100px 20% 1fr 1fr; /* Ou repeat(2, fr) */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            width: 1500px;
+
+        }
+        .item2{
+            border: 1px solid salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+    </div>
+</body>
+</html>

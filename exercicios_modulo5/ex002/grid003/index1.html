@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica aula 4 (parte 2)</title>
+    <style>
+        div.container{
+            border: 3px solid blue;
+           
+            display: grid;
+            /* grid-template: repeat(3, auto) / repeat(3, auto); */
+            grid-template-rows: repeat(3, 80px);
+            /* grid-template-columns: 1fr 4fr 1fr; */
+            grid-template-columns: 100px 40% repeat(2, 1fr);
+            /* grid-auto-flow: column; */ /* quebra na forma de coluna */
+            grid-auto-rows: 80px; /* usar sempre que tiver uma linha nova */
+            grid-auto-columns: 120px;
+            gap: 10px;
+            place-items: normal normal normal;
+            place-content: normal normal normal;
+        }
+
+        div.item{
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- grids explicitos -->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div> <!-- Grid implicito -->
+    </div>
+</body>
+</html>

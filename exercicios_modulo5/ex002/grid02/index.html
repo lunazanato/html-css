@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica aula 3</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container1{
+            border: 2px solid blue;
+            height: 250px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            margin-bottom: 10px;
+            /* 
+            items:
+            stretch: padrão
+            start: inicio do container
+            center: centro do container
+            end: final do container
+            */
+            /* 
+            content:
+            start: inicio
+            center: centralizar
+            end: final
+            space-between: cola o primeiro bloco no inicio e o ultimo no final
+            space-evenly: espaços entre os itens são iguais
+            space-around: espaço em volta; o primeiro e ultimo item fica mais proximo da borda
+            stretch: padrão
+            */
+            /* 
+            items: configura cada item
+            content: configura todo o conteúdo
+            */
+            align-items: center;
+            align-content: space-between;
+
+        }
+
+        .item1{
+            border: 1px solid red;
+        }
+
+        .container2{
+            border: 2px solid orangered;
+            height: 250px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            margin-bottom: 10px;
+            /* stretch: padrão
+            start: inicio do container
+            center: centro do container
+            end: final do container
+            */
+            /* 
+            content:
+            start: inicio
+            center: centralizar
+            end: final
+            space-between: cola o primeiro bloco no inicio e o ultimo no final
+            space-evenly: espaços entre os itens são iguais
+            space-around: espaço em volta; o primeiro e ultimo item fica mais proximo da borda
+            stretch: padrão
+            */
+            /* 
+            items: configura cada item
+            content: configura todo o conteúdo
+            */
+            justify-items: center;
+            justify-content: space-evenly;
+        }
+
+        .item2{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h3>Align: alinhamento vertical</h3>
+    <div class="container1">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+        <div class="item1">D</div>
+        <div class="item1">E</div>
+        <div class="item1">F</div>
+        <div class="item1">G</div>
+    </div>
+    <h3>Justify: alinhamento horizontal</h3>
+    <div class="container2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+</body>
+</html>
